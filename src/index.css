@@ -4,7 +4,6 @@ html, body {
   background-color: #000000;
 }
 
-/* time box */
 h1 {
   color: #ffffff;
   text-align: center;
@@ -12,7 +11,6 @@ h1 {
   margin: 3rem;
 }
 
-/* container */
 #container {
   background-color: #ffffff;
   width: 540px;
@@ -21,7 +19,21 @@ h1 {
   padding: 1.5rem;
 }
 
-/* time text */
+h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+#record-info {
+  background-color: #ffffff;
+  width: 540px;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
 #time {
   color: #000000;
   font-size: 3rem;
@@ -37,11 +49,12 @@ h1 {
   text-align: center;
 }
 
-#start, #stop, #reset {
+#start, #stop, #reset, #record, #remove {
   font-size: 1.5rem;
   border-radius: .3rem;
   box-shadow: 0 0 20px rgba(77, 78, 79, 0.25);
 }
+
 /* Media queries for tablet and iPhone */
 @media only screen and (max-width: 768px) {
   h1 {
@@ -50,6 +63,16 @@ h1 {
   }
   
   #container {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+
+  #record-info {
     max-width: 90%;
     padding: 1rem;
   }
@@ -63,7 +86,7 @@ h1 {
     font-size: 2rem;
   }
 
-  #start, #stop, #reset {
+  #start, #stop, #reset, #record {
     font-size: 1.2rem;
     border-radius: .2rem;
   }
@@ -80,6 +103,16 @@ h1 {
     padding: 0.5rem;
   }
 
+  h2 {
+    font-size: 1.2rem;
+    margin: 1.5rem;
+  }
+
+  #record-info {
+    max-width: 90%;
+    padding: 0.5rem;
+  }
+
   #time {
     font-size: 2rem;
     margin: .25rem;
@@ -89,7 +122,7 @@ h1 {
     font-size: 1.8rem;
   }
 
-  #start, #stop, #reset {
+  #start, #stop, #reset, #record, #remove {
     font-size: 1rem;
     border-radius: .2rem;
   }
