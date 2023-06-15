@@ -10,6 +10,19 @@ let startTime;
 let stopTime = 0;
 let timeoutID;
 
+const dateDisplay = document.getElementById('date');
+
+function displayDate() {
+  const currentDate = new Date();
+  const year = String(currentDate.getFullYear());
+  const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+  const day = String(currentDate.getDate()).padStart(2, '0');
+
+  dateDisplay.textContent = `Today's Date: ${year}-${month}-${day}`;
+}
+
+displayDate();
+
 function displayTime() {
   const currentTime = new Date(Date.now() - startTime + stopTime);
   const hours = String(currentTime.getUTCHours()).padStart(2, '0');
@@ -25,6 +38,7 @@ function recordTime() {
   const recordItem = document.createElement('li');
   recordItem.textContent = time.textContent;
   recordList.appendChild(recordItem);
+  alert(`Recorded Time: ${time.textContent}`);
 }
 
 function removeRecord() {
