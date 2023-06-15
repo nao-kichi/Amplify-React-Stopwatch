@@ -86,7 +86,7 @@ h2 {
     font-size: 2rem;
   }
 
-  #start, #stop, #reset, #record {
+  #start, #stop, #reset, #record, #remove {
     font-size: 1.2rem;
     border-radius: .2rem;
   }
