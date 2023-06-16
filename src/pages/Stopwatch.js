@@ -1,8 +1,3 @@
-import '../index.css';
-import '../css/Stopwatch.css';
-
-function Stopwatch() {
-
 const time = document.getElementById('time');
 const startButton = document.getElementById('start');
 const stopButton = document.getElementById('stop');
@@ -84,7 +79,3 @@ resetButton.addEventListener('click', function () {
 
 recordButton.addEventListener('click', recordTime);
 removeButton.addEventListener('click', removeRecord);
-
-}
-
-export default Stopwatch;
